@@ -39,7 +39,7 @@ const LandingSec: React.FunctionComponent = () => {
           </p>
           <Link href="/about">
             <div className="w-fit px-10 py-4 font-bold link-btn text-black transition-all rounded-2xl ">
-              Know More.
+              Know More
             </div>
           </Link>
         </div>
