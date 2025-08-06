@@ -1,26 +1,146 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+::selection {
+  color: rgb(82, 17, 179);
+  background: rgba(66, 254, 255, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.landing-bg {
+  background-color: black;
+  background-image: 
+  radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 170, 255, 0.114) 1%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    /* url("/assets/topographics.svg"), */
+      radial-gradient(circle, rgba(4, 125, 231, 0.678) 0, rgb(0, 0, 0) 1px);
+  background-size: 100% 100%, /* 100% 100%, */ 20px 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-main-grd {
+  /* background: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%); */
+  background: rgb(30, 250, 161);
+  background: linear-gradient(
+    45deg,
+    rgba(30, 250, 161, 1) 0%,
+    rgba(66, 254, 255, 1) 23%,
+    rgba(116, 126, 254, 1) 46%,
+    rgba(254, 82, 252, 1) 74%,
+    rgba(253, 42, 253, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 2vw rgba(0, 255, 255, 0.422); */
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.text-main-grd-2 {
+  /* background: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%); */
+  background: rgb(4, 90, 56);
+  background: linear-gradient(
+    45deg,
+    rgb(2, 133, 255) 23%,
+    rgba(254, 82, 252, 1) 74%,
+    rgb(254, 82, 188) 74%,
+    rgb(253, 42, 42) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 0 0 2vw rgba(0, 255, 255, 0.422); */
+}
+
+.text-bg-blur {
+  transform: scale(1.01);
+  opacity: 0.7;
+  filter: blur(0.5rem);
+  z-index: 1;
+}
+
+.link-btn {
+  background: rgb(30, 250, 161);
+  background: linear-gradient(
+    45deg,
+    #1efaa1 0%,
+    rgba(66, 254, 255, 1) 23%,
+    rgba(116, 126, 254, 1) 46%,
+    rgba(254, 82, 252, 1) 74%,
+    rgba(253, 42, 253, 1) 100%
+  );
+  background-size: 200% 200%;
+  box-shadow: 0 0 2vw rgba(0, 255, 255, 0.4);
+}
+
+.link-btn:hover {
+  background-position: right;
+  box-shadow: 0 0 2vw rgba(255, 0, 247, 0.4);
+}
+
+.light-dot-bg {
+  background-image: radial-gradient(
+      circle,
+      rgba(238, 252, 255, 0.344) 0%,
+      rgba(0, 170, 255, 0.114) 1%,
+      rgb(205, 238, 255) 100%
+    ),
+    /* url("/assets/topographics.svg"), */
+      radial-gradient(circle, rgba(4, 29, 50, 0.777) 0, #e2e7ea 1px);
+  background-size: 100% 100%, /* 100% 100%, */ 20px 20px;
+}
+
+.white-dot-bg {
+  background-image: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(circle, rgb(9, 89, 154) 0, #ffffff 1px);
+  background-size: 100% 100%, 20px 20px;
+}
+
+.main-nav-bar {
+  position: relative;
+  z-index: 10 !important;
+}
+.main-nav-bar-bg {
+  height: 80%;
+  width: 98%;
+
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+  z-index: 1;
+  background: rgb(255, 5, 5);
+  background: linear-gradient(
+    45deg,
+    rgba(30, 250, 161, 1) 0%,
+    rgba(66, 254, 255, 1) 23%,
+    rgba(116, 126, 254, 1) 46%,
+    rgba(254, 82, 252, 1) 74%,
+    rgba(253, 42, 253, 1) 100%
+  );
+  /* transform: scale(1.01); */
+  opacity: 0.7;
+  filter: blur(0.11rem);
+}
+
+.skill-lvl-text {
+  visibility: hidden;
+  transition: all 0.15s linear;
+}
+
+.skill-card:hover .skill-lvl-text {
+  visibility: visible;
+}
+.skill-img {
+  transition: all 0.15s ease-in;
+}
+.skill-card:hover .skill-img {
+  scale: 1.15;
 }
