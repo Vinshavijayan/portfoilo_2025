@@ -11,7 +11,7 @@ export default function Contact() {
               <span className="text-[#32fcd7]   ">Contact Me</span>
             </h4>
             <h2 className="font-extrabold text-5xl leading-tight  text-black">
-              Let's start a conversation
+              Let's start a conversation.
               {/* <br /> My portfolio */}
             </h2>
             <p className="text-xl leading-normal my-5 font-semibold ">
