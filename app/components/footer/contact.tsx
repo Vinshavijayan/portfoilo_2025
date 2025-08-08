@@ -18,7 +18,7 @@ export default function Contact() {
               Got a groundbreaking, billion-dollar idea? I'd love to hear it!
               Connect with me on{" "}
               <a
-                href="https://www.linkedin.com/in/vinsha-vijayan-%F0%9F%87%A6%F0%9F%87%AA-4589371a0/"
+                href="https://www.linkedin.com/in/vinshavijayan/"
                 className=" underline text-sky-600 "
                 aria-label="LinkedIn Profile "
               >
@@ -45,7 +45,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/vinsha-vijayan-%F0%9F%87%A6%F0%9F%87%AA-4589371a0/"
+                href="https://www.linkedin.com/in/vinshavijayan/"
                 className="m-2 text-white p-3 grid place-content-center w-12 h-12 rounded-xl bg-gradient-to-br from-sky-400 to-teal-500 hover:from-sky-200 hover:to-teal-200 hover:text-sky-700 transition-all ease-linear shadow-xl shadow-sky-400/50"
                 aria-label="LinkedIn Profile "
               >
