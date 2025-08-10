@@ -28,7 +28,7 @@ const About: React.FunctionComponent = () => {
       <p className="text-lg leading-normal my-5 font-semibold">
 Over the past 4+ years, I have worked on diverse projects, building real-world solutions that enhanced my problem-solving and technical skills. Alongside my professional experience, I also collaborate with clients as a freelancer, taking on challenging projects that keep me constantly evolving.</p>      <p className="text-lg leading-normal my-5 font-semibold">
 Today, as a self-taught software engineer, I continue to evolve by exploring new technologies and taking on challenging projects that push my limits. My journey is a testament to my belief that consistent learning and real-world problem-solving are the true pathways to professional growth.  </p>    <div>
-        <a href="/cvkv.pdf" target="_blank" className="">
+        <a href="/vinsha_kv_25.pdf" target="_blank" className="">
           <div className="flex justify-center items-center px-10 py-4 font-bold link-btn text-black transition-all rounded-2xl w-fit hover:text-white gap-4">
             <h2 className="mt-2">Download My CV</h2>
             <Iconify icon="ph:download-bold" className="w-7 h-7" />
