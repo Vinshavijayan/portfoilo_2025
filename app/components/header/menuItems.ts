@@ -12,6 +12,10 @@ const MenuItems: MenuI[] = [
     name: "About",
     link: "/about",
   },
+  {
+    name: "Projects",
+    link: "/projects",
+  },
   
   {
     name: "Blog",

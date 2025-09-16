@@ -16,6 +16,13 @@ const JourneySec: React.FunctionComponent = () => {
             <p className="text-lg leading-normal my-5 font-semibold ">
              Since beginning my career in 2020 as a self-taught developer, I’ve been dedicated to building robust and visually compelling web solutions. Through continuous learning and hands-on experience, I have developed expertise in both frontend and backend development, with a strong focus on creating seamless user experiences and efficient system architectures.
             </p>
+             <div className="w-full grid   place-items-center md:block">
+              <Link href="/projects">
+                <div className="w-fit px-10 py-4 font-bold link-btn text-black transition-all text-center rounded-2xl">
+                  My Works
+                </div>
+              </Link>
+            </div>
           </div>
           <div className="w-full md:w-[50%] hidden md:block ">
             <img
@@ -24,6 +31,7 @@ const JourneySec: React.FunctionComponent = () => {
               className="w-full object-cover rounded-xl"
             />
           </div>
+         
         </div>
         {/* <div className="w-full grid place-items-center my-12 ">
           <Link href="/journey">
