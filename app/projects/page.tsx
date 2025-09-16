@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
+    title: "E-Commerce Website & Dashboard",
     description:
       "Website and dashboard built for Rookie Ninja General Trading LLC, Dubai. Developed using the MERN stack with a focus on scalability and usability.",
     image: "/home/projects/rookie.png",
@@ -20,12 +20,12 @@ const projects = [
   {
     title: "Kaspake App",
     description:
-      "Online shopping and offer redemption app with delivery features. Built using React and SQL.",
+      "Online shopping and offer redemption app with delivery features. Built using ReactNative and SQL.",
     image: "/home/projects/kaspake.png",
     link: "https://kaspake.mu/", 
   },
   {
-    title: "HRMS",
+    title: "HRMS Software",
     description:
       "Human Resource Management System to streamline HR operations in a company. Built with the MERN stack.",
     image: "/home/projects/26.png",
